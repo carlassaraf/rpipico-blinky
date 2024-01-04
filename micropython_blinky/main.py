@@ -13,7 +13,7 @@ print("Porcentaje libre de Flash: {:.2f}%".format(get_free_flash_percent()))
 print("Bytes de RAM usados: {:.2f} KB".format(get_allocated_ram()))
 print("Bytes totales de RAM: {:.2f} KB".format(get_total_ram()))
 print("Bytes reservados de RAM para Micropython: {:.2f} KB".format(get_reserved_ram()))
-print("Porcentaje de RAM no disponible: {:.2f}%".format(get_allocated_ram_percent()))
+print("Porcentaje de RAM disponible: {:.2f}%".format(get_free_ram_percent()))
 
 # Programa principal
 
