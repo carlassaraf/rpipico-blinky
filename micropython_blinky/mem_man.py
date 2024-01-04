@@ -62,8 +62,8 @@ def get_reserved_ram():
     return RP2040_SRAM_SIZE_KB - get_free_ram() - get_allocated_ram()
 
 
-def get_allocated_ram_percent():
+def get_free_ram_percent():
     """
-    Obtiene el porcentaje no disponible de RAM
+    Obtiene el porcentaje disponible de RAM
     """
-    return 100 * (get_allocated_ram() + get_reserved_ram()) / (get_total_ram() + get_reserved_ram())
+    return 100 * get_free_ram() / RP2040_SRAM_SIZE_KB
