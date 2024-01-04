@@ -25,7 +25,7 @@ def get_free_flash_percent():
     Obtiene el porcentaje de flash usado
     """
     # Devuelve el porcentaje usado
-    return get_free_flash() / RPI_PICO_FLASH_SIZE_MB
+    return 100 * get_free_flash() / RPI_PICO_FLASH_SIZE_MB
 
 
 def get_allocated_ram():
